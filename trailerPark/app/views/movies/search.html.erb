@@ -1,0 +1,11 @@
+<h1>Type in the - Title - or - Part of the Title - of the Movie You'd Like to See!</h1>
+<p>(two characters or more)</p>
+
+<%= form_tag search_results_movies_path, :method => :get do %>
+
+  <%= label_tag :keyword %>
+  <%= text_field_tag :keyword%>
+  
+  <%= submit_tag "Show Me Trailers!" %>
+
+<% end %>

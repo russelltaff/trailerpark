@@ -1,4 +1,4 @@
-_form.html.erb<% unless @user.errors.none? %>
+<% unless @user.errors.none? %>
   <% @user.errors.full_messages.each do |msg| %>
     <%= msg %>
   <% end %>

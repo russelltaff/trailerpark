@@ -7,11 +7,6 @@ class UsersController < ApplicationController
     render :new
   end
 
-  def create_actor
-    render :create_actor
-  end
-
-
   def create
     @user = User.new(user_params)
 
@@ -55,8 +50,8 @@ class UsersController < ApplicationController
   end
 
   def authorized!
-    # unless @user.id == session[:user_id]
+    unless @user.id == session[:user_id]
       redirect_to user_path(session[:user_id])
-    # end
+    end
   end
 end
