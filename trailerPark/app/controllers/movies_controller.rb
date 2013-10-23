@@ -24,15 +24,14 @@ class MoviesController < ApplicationController
   end
 
   def search_results
-      @keyword = params[:keyword].gsub(' ', '+')
+    @keyword = params[:keyword].gsub(' ', '+')
     url = "http://www.omdbapi.com/?s=#{@keyword}"  
     html = HTTParty.get(url) 
-    hash = JSON(html)
+    @hash = JSON(html)
     @movie = Movie.new
+    
 
-    @movies.each do |movie|
-    @movie_array = movie
   end
-  end
-
 end
+
+
