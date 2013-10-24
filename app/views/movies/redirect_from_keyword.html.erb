@@ -1,3 +1,4 @@
+<%= debug @link %>
 <h1 class="header"> Results for "<%= @title.gsub('+', ' ') %>": </h1>
 
 <h2 class= "subheader"><div><%= @movie["Title"] %></div></h2>
@@ -5,6 +6,7 @@
 <h4 class= "subheader"><div><%= @movie["Plot"] %></div></h4>
 <br>
 <div><img src= '<%= @movie["Poster"] %>' ></div>
+<iframe src="<%= @link %>" width="500" height="500">
 <h6 class= "subheader"><div><strong>Year</strong>: <%= @movie["Year"] %></div><h6>
 <br>
 <br>

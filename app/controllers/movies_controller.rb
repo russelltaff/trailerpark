@@ -42,10 +42,13 @@ class MoviesController < ApplicationController
     end
 
   def redirect_from_keyword
-  @title = params[:title].gsub(' ', '+')
+    @title = params[:title].gsub(' ', '+')
     url = "http://www.omdbapi.com/?t=#{@title}"  
     html = HTTParty.get(url) 
     @movie = JSON(html)
+
+    raw_xml = HTTParty.get("http://api.traileraddict.com/?imdb=#{@movie['imdbID'].gsub('tt', '')}&count=4&width=680")
+    @link = raw_xml["trailers"]["trailer"].map { |t| t["link"] }.first
   end
 
 end
