@@ -15,6 +15,7 @@ TrailerPark::Application.routes.draw do
 
   resource :session, only: [:new, :create, :destroy]
 
+root "welcome#index"
 end
 
 
