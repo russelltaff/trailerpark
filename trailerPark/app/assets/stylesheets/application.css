@@ -1193,8 +1193,8 @@ abbr {
 
 /* Blockquotes */
 blockquote {
-  margin: 0 0 1.25em;
-  padding: 0.5625em 1.25em 0 1.1875em;
+  margin: 0 0 0em;
+  padding: 0em 1.25em 0 1.1875em;
   border-left: 1px solid #dddddd; }
   blockquote cite {
     display: block;

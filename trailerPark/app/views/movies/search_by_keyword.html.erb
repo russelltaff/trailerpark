@@ -8,7 +8,10 @@
       <li><%= link_to "#{movie['Title']}", "/movies/redirect_from_keyword?utf8=✓&title=#{movie["Title"].gsub(" ","+")}&commit=Show+Me+Trailers%21" %> </li>
       <br>
       <li>Year: <%= movie["Year"] %></li>
-      <li>Media Type: <%= movie["Type"].upcase %></li>
+      <li>Media Type: <%= movie["Type"].upcase %>
+       
+        
+          </li>
       <br>
     </ul>
   <div>
