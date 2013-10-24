@@ -1,0 +1,15 @@
+<h1> <%= @keyword %> </h1>
+<img src ="<%= @poster %>"> </img>
+
+###add the trailer
+
+
+<%= form_for @movie do |f| %>
+
+
+  <%= f.hidden_field url: %>
+  <%= f.hidden_field :user_id, value: session[:user_id] %>
+
+  <%= f.submit %>
+
+<% end %>

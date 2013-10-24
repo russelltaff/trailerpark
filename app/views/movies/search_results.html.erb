@@ -1,0 +1,14 @@
+<h1> Your Results for  "<%= @keyword %>": </h1>
+<!-- <img src ="<%= @img_url%>"> </img>
+<h1> now rate the image </h1> -->
+
+<% @hash["Search"].each do |h| %>
+  <div class="search-result">
+    <ul>
+      <li><%= h["Title"] %></li>
+      <li><%= h["Year"] %></li>
+<!--       did not add imdbID here
+ -->      <li><a href= "Link to <%= h["Title"] %> here</a></li>
+    </ul>
+  <div>
+<% end %>

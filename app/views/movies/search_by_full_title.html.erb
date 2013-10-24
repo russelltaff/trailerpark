@@ -1,0 +1,27 @@
+<h1> Results for <%= @title.gsub('+', ' ') %>: </h1>
+
+<h2 class= "subheader"><div><%= link_to "#{@movie["Title"]}", search_by_full_title_movies_path %> <%= @movie["Title"] %></div></h2>
+
+<h4 class= "subheader"><div><%= @movie["Plot"] %></div></h4>
+<br>
+<div><img src= '<%= @movie["Poster"] %>' ></div>
+<h6 class= "subheader"><div><strong>Year</strong>: <%= @movie["Year"] %></div><h6>
+<br>
+<br>
+<h4 class = "subheader"><div><strong>Actors</strong>: <%= @movie["Actors"] %></div></h4>
+
+
+
+<br>
+<br>
+<%= link_to "Back to Search", search_movies_path %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<blockquote>There's only one thing that can kill the movies, and that's education<cite>Will Rogers</cite></blockquote>
+
+

@@ -1,0 +1,8 @@
+<%= form_tag search_by_keyword_movies_path, :method => :get do %>
+
+  <%= label_tag :keyword %>
+  <%= text_field_tag :keyword %>
+  
+  <%= submit_tag "Show Me Trailers!" %>
+
+<% end %>
