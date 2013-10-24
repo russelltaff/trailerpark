@@ -1,11 +1,29 @@
-<h1>Type in the - Title - or - Part of the Title - of the Movie You'd Like to See!</h1>
-<p>(two characters or more)</p>
+<h1>Can't Recall the Full Title? <em> No Worries! </em> Enter Any Part You Remember:</h1>
+<p>(two characters or more, please)</p>
 
-<%= form_tag search_results_movies_path, :method => :get do %>
+<%= form_tag search_by_keyword_movies_path, :method => :get do %>
 
   <%= label_tag :keyword %>
-  <%= text_field_tag :keyword%>
+  <%= text_field_tag :keyword %>
   
   <%= submit_tag "Show Me Trailers!" %>
 
 <% end %>
+
+<br>
+<br>
+<br>
+
+<h4>Or, if you know the name of the movie you want to see: </h4>
+
+<%= render "form" %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<blockquote>Dude, no. This is serious. I just sharted.<cite>Philip Seymour Hoffman</cite></blockquote>

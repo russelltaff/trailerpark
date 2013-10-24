@@ -1,0 +1,19 @@
+<h2 class= "subheader">Once you find what you're looking for, enter it in here: <br></n> <%= render "form" %></h2>
+
+<h4> Please choose from the following: </h4>
+
+<% @movies.each do |movie| %>
+  <div class="search-result">
+    <ul>
+      <li><%= movie["Title"] %></li>
+      <li><%= movie["Year"] %></li>
+    </ul>
+  <div>
+<% end %>
+
+<blockquote>Am I romantic? I've seen 'Wuthering Heights' ten times. I'm a romantic.<cite>Johnny Depp</cite></blockquote>
+
+
+
+
+<%= link_to "Back to Search", search_movies_path %>

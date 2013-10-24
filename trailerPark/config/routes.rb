@@ -3,10 +3,11 @@ TrailerPark::Application.routes.draw do
     resources :movies, only: [:index, :create]
   end
 
-  resources :movies, except: [:create] do
+  resources :movies, except: [:create, :index] do
     collection do 
       get "search"
-      get "search_results"
+      get "search_by_keyword"
+      get "search_by_full_title"
     end
   end
 
