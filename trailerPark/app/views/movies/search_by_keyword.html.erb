@@ -1,17 +1,22 @@
-<h2 class= "subheader">Once you find what you're looking for, enter it in here: <br></n> <%= render "form" %></h2>
+<h2 class= "subheader"> Not finding your movie below? Try again: <br></n> <%= render "form" %></h2>
 
 <h4> Please choose from the following: </h4>
 
 <% @movies.each do |movie| %>
   <div class="search-result">
     <ul>
-      <li><%= movie["Title"] %></li>
-      <li><%= movie["Year"] %></li>
+      <li><%= link_to "#{movie['Title']}", "/movies/redirect_from_keyword?utf8=✓&title=#{movie["Title"].gsub(" ","+")}&commit=Show+Me+Trailers%21" %> </li>
+      <br>
+      <li>Year: <%= movie["Year"] %></li>
+      <li>Media Type: <%= movie["Type"].upcase %></li>
+      <br>
     </ul>
   <div>
 <% end %>
-
-<blockquote>Am I romantic? I've seen 'Wuthering Heights' ten times. I'm a romantic.<cite>Johnny Depp</cite></blockquote>
+<br>
+<br>
+<br>
+<blockquote>You can fool a person into going to see a movie with a good trailer.<cite>Nile Rogers</cite></blockquote>
 
 
 

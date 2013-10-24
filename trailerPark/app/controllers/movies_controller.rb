@@ -30,6 +30,7 @@ class MoviesController < ApplicationController
     hash = JSON(html)
     @movies = hash["Search"]
     # @movie = Movie.new
+
   end
 
   def search_by_full_title
@@ -38,11 +39,18 @@ class MoviesController < ApplicationController
     html = HTTParty.get(url) 
     @movie = JSON(html)
     # @movie = Movie.new
- 
+    end
+
+  def redirect_from_keyword
+  @title = params[:title].gsub(' ', '+')
+    url = "http://www.omdbapi.com/?t=#{@title}"  
+    html = HTTParty.get(url) 
+    @movie = JSON(html)
+  end
 
 end
 
-end
+
 
 
 

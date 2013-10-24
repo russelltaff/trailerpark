@@ -1,22 +1,25 @@
 <h1>Can't Recall the Full Title? <em> No Worries! </em> Enter Any Part You Remember:</h1>
 <p>(two characters or more, please)</p>
 
-<%= form_tag search_by_keyword_movies_path, :method => :get do %>
-
-  <%= label_tag :keyword %>
-  <%= text_field_tag :keyword %>
-  
-  <%= submit_tag "Show Me Trailers!" %>
-
-<% end %>
-
+<%= render "form" %>
 <br>
 <br>
 <br>
 
 <h4>Or, if you know the name of the movie you want to see: </h4>
 
-<%= render "form" %>
+
+
+<%= form_tag search_by_full_title_movies_path, :method => :get do %>
+
+  <%= label_tag :title %>
+  <%= text_field_tag :title %>
+  
+  <%= submit_tag "Show Me Trailers!" %>
+  
+   
+<% end %>
+
 <br>
 <br>
 <br>

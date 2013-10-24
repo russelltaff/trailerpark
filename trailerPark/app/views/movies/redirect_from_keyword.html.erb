@@ -1,6 +1,6 @@
 <h1> Results for <%= @title.gsub('+', ' ') %>: </h1>
 
-<h2 class= "subheader"><div><%= link_to "#{@movie["Title"]}", search_by_full_title_movies_path %> <%= @movie["Title"] %></div></h2>
+<h2 class= "subheader"><div><%= @movie["Title"] %></div></h2>
 
 <h4 class= "subheader"><div><%= @movie["Plot"] %></div></h4>
 <br>
@@ -23,5 +23,3 @@
 <br>
 
 <blockquote>There's only one thing that can kill the movies, and that's education<cite>Will Rogers</cite></blockquote>
-
-
