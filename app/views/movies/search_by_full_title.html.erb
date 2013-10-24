@@ -1,10 +1,12 @@
-<h1> Results for <%= @title.gsub('+', ' ') %>: </h1>
+<h1 class= "header"> Results for "<%= @title.gsub('+', ' ') %>": </h1>
+<h3 class="subheader">Didn't find what you were looking for? Try again:</h1>
+<%= render"form2" %>
 
 <h2 class= "subheader"><div><%= @movie["Title"] %></div></h2>
 
 <h4 class= "subheader"><div><%= @movie["Plot"] %></div></h4>
 <br>
-<div><img src'<%= @movie["Poster"] %>' ></div>
+<div><img src= '<%= @movie["Poster"] %>' ></div>
 <h6 class= "subheader"><div><strong>Year</strong>: <%= @movie["Year"] %></div><h6>
 <br>
 <br>
