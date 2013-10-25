@@ -19,9 +19,9 @@ development:
   encoding: unicode
   database: trailerpark_development
   pool: 5
-  # username: rtaff2012
-  # password: leonruss
-  # host: localhost
+  username: rtaff2012
+  password: leonruss
+  host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -49,13 +49,13 @@ test:
   encoding: unicode
   database: trailerpark_test
   pool: 5
-  # username: rtaff2012
-  # password: leonruss
+  username: rtaff2012
+  password: leonruss
 
 production:
   adapter: postgresql
   encoding: unicode
   database: trailerpark_production
   pool: 5
-  # username: rtaff2012
-  # password: leonruss
+  username: rtaff2012
+  password: leonruss
