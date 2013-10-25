@@ -3,11 +3,11 @@
 
 <h2><%= @movie["Title"] %></h2>
 
-<h4><%= @movie["Plot"] %></h4>
+<%= @movie["Plot"] %></h4>
 <br>
 <div class="images_keyword_redirect">
 <img src= '<%= @movie["Poster"] %>' >
-<iframe src="<%= @link %>" width="500" height="500"></iframe>
+<div class="redirect_vid"><iframe src="<%= @link %>" width="500" height="500"></iframe></div>
 <h6><strong>Year</strong>: <%= @movie["Year"] %></h6>
 <h4><strong>Actors</strong>: <%= @movie["Actors"] %></h4>
 </div>

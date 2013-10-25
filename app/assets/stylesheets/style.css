@@ -54,6 +54,7 @@ iframe.full_title_vid
 
 
 
+
 h1 {
   color: #592400;
   font-size: 2.2em;
@@ -241,11 +242,13 @@ div.images_keyword_redirect
 .images_keyword_redirect img
 {
   margin: 0 auto;
+  padding-left: 80px;
 }
 
 div.search_by_full_image
 {
-  margin: 0 auto;
+  padding-left: 100px;
+  display: inline-block;
 }
 
 h1.header_full
