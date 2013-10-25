@@ -1,117 +1,203 @@
 body 
-    { 
-    background: url(http://johnfitzsimmons.files.wordpress.com/2010/01/rustic-wood-frame-dog-in-trailer-park-large-copy.jpg) no-repeat center center fixed; 
+{ 
+  background: url(https://s3.amazonaws.com/uploads.hipchat.com/39979/459470/1ALXMXZ5Rnzx92J/background_light.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   background-size: cover;
-      font-family: "sans-serif", "Lucida Sans", Tahoma, Verdana; 
-    font-size: 20px;
-    background-color: white; 
-     
-    text-align:center; 
+
+  font-family: "sans-serif", "Lucida Sans", Tahoma, Verdana; 
+  font-size: 20px;
+  text-align:left;
+   
 } 
 
-
+/*videos*/
 
 iframe.frontpage {
-  margin-top: 20px;
-  margin-bottom: 60px;
-  padding: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding:30px;
+  padding-right: 27px;
   padding-color: gray;
-
+  border: .5px dashed #592400;
 
   -webkit-border-radius: 12px; 
   border-radius: 12px; 
 
-  -webkit-box-shadow: 4px 4px 14px #000; 
+  -webkit-box-shadow: 20px px 30px #000; 
   box-shadow: 4px 4px 14px #000; 
 
-  -moz-transform:rotate(18deg);
+
   -webkit-transform:rotate(20deg);
   -o-transform:rotate(20deg);
   -ms-transform:rotate(20deg);
   filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
 }
 
+iframe.full_title_vid
+{
+ -webkit-border-radius: 25px; 
+ border-radius: 25px; 
 
-  h1 {
-        color: white;
-        font-size: 2.2em;
-        text-align: center;
-        margin-top: 0px;
-      }
-      h1 
-    { 
-    font-size: 2.2em; 
-} 
+ -webkit-box-shadow: 8px 8px 14px #000; 
+ box-shadow: 8px 8px 14px #000; 
+
+
+ -webkit-transform:rotate(0deg);
+ -o-transform:rotate(0deg);
+ -ms-transform:rotate(0deg);
+ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
+}
+
+
+
+
+h1 {
+  color: #592400;
+  font-size: 2.2em;
+
+  text-align: right;
+ 
+}
+
 
 h2 
-    { 
-    font-size: 2.0em;
-    color: #6d9fac;     
+{ 
+  font-size: 2.0em;
+  color: #6d9fac;     
 } 
 
 h3 
-    { 
-    font-size: 1.8em; 
-    color: #6d9fac; 
+{ 
+  font-size: 1.8em; 
+  color: #6d9fac; 
 } 
 
 h4 
-    { 
-    font-size: 1.6em;  
-    color: #6d9fac;    
+{ 
+  font-size: 1.6em;  
+  color: #6d9fac;    
 } 
 
 h5 
-    { 
-    font-size: 1.4em;  
-    color: #6d9fac;    
+{ 
+  font-size: 1.4em;  
+  color: #6d9fac;    
 } 
 
 p 
-    { 
-    font-size: 1.2em;  
-    color: #6d9fac;    
+{ 
+  font-size: 1.2em;  
+  color: #6d9fac;    
 }
 
 blockquote.blockquote1
-  {
-    font-family:"Helvetica";
-    font-size: 1.2em;
-    padding-top: 100px;
-    color: white;
-  }
+{
+  font-family:"sans-serif";
+  font-size: 1.2em;
+  padding-top: 100px;
+  color: #6d9fac;
+  text-align: center;
+}
 
-form 
+/*form 
 {
   padding-top: 75px;
-}
+  }*/
 
-div.panel
-{
-  position:absolute;
-  left:30px;
-}
 
-blockquote.welcome
-{
-  position: absolute;
-  bottom: 5px;
-  color: white;
-  font-size:1.2em;
-}
+  blockquote.welcome
+  {
+    display:inline-block;
+    padding-top: 175px;
+    color: #592400;
+    font-size:1.2em;
+    font-family: "sans-serif";
+  }
 
-div.show
-{
-  padding-top: 50px;
-}
+  h1.step_in
+  {
+    padding-top: 50px;
+    color:#6d9fac;
+  }
 
-h1.search
-{
-  padding-top: 150px;
-}
+  div.search h1
+  {
+     color: #6d9fac;
+    display: inline-block;
+    text-align:center;
+  
+  }
 
-h4.search
-{
-  color: white;
-}
+  div.search h4, div.search p
+  {
+    color: #592400;
+    display: inline-block;
+    text-align:center;
+  
+  }
+
+
+
+
+  h4.search
+  {
+    color: #592400;
+   text-align: center;
+  }
+
+  /*forms*/
+  /*/*form1=login**/
+  /*form2=*/
+  div.form1
+  { 
+  display:inline-block;
+  padding-left: 360px;
+  text-align: center;
+  padding-bottom:40px;
+  font-family: "sans-serif";
+  font-weight:bold;
+  color:#592400;
+    
+  }
+
+  div.form2
+  {
+
+  }
+
+  h1.sign_in_existing
+  {
+  
+    text-align:right;
+    font-size: 1.2em;
+    font-style: italic;
+  }
+
+  h2.main_subheader
+  {
+    padding-left: 400px;
+  
+  }
+  /*border*/
+ div.navigation
+ {
+  padding-right: 100px;
+/*  background-color: #7E4F39;*/
+  font: .9em;
+  font-family: "sans-serif";
+  color:white;
+  
+ }
+
+ div.session_form
+ {
+  padding-left:450px ;
+  font-family: "sans-serif";
+  color: #592400;
+ }
+
+ blockquote.PSH
+ {
+  color: #6d9fac;
+  font-style: italic;
+ }

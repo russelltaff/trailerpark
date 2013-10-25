@@ -1,7 +1,7 @@
 
 <h1 class= "header"> Results for "<%= @title.gsub('+', ' ') %>": </h1>
 <h3 class="subheader">Didn't find what you were looking for? Try again:</h1>
-<%= render"form2" %>
+<%= render"form" %>
 
 <h2 class= "subheader"><div><%= @movie["Title"] %></div></h2>
 
@@ -12,7 +12,7 @@
 <br>
 <br>
 <h4 class = "subheader"><div><strong>Actors</strong>: <%= @movie["Actors"] %></div></h4>
-<iframe src="<%= @link %>" width="750" height="600"  >
+<iframe class="full_title_vid" src="<%= @link %>" width="800" height="420" >
 <br>
 <br>
 
