@@ -35,6 +35,8 @@ iframe.frontpage {
 
 iframe.full_title_vid
 {
+ 
+  margin:0 auto;
  -webkit-border-radius: 25px; 
  border-radius: 25px; 
 
@@ -47,6 +49,7 @@ iframe.full_title_vid
  -ms-transform:rotate(0deg);
  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
 }
+
 
 
 
@@ -162,7 +165,8 @@ blockquote.blockquote1
 
   div.form2
   {
-
+  font-size: .5em;
+  color: #592400;
   }
 
   h1.sign_in_existing
@@ -201,3 +205,50 @@ blockquote.blockquote1
   color: #6d9fac;
   font-style: italic;
  }
+
+h2.not_finding_keyword
+{
+  text-align: center;
+  padding-top: 80px;
+}
+
+h4.please_choose_keyword_movie
+{
+  text-align: center
+}
+
+div.keyword_list
+{
+  border: 1px solid #6d9fac;
+  text-align: center;
+}
+
+.keyword_list li {
+  list-style: none;
+}
+
+h1.redirect_header
+{
+  text-align: left;
+  font-size: 1.7em;
+}
+
+div.images_keyword_redirect
+{
+  display:block;
+}
+
+.images_keyword_redirect img
+{
+  margin: 0 auto;
+}
+
+div.search_by_full_image
+{
+  margin: 0 auto;
+}
+
+h1.header_full
+{
+  text-align: left;
+}
