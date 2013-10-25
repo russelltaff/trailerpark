@@ -1,3 +1,4 @@
+
 <h1 class= "header"> Results for "<%= @title.gsub('+', ' ') %>": </h1>
 <h3 class="subheader">Didn't find what you were looking for? Try again:</h1>
 <%= render"form2" %>
@@ -6,20 +7,22 @@
 
 <h4 class= "subheader"><div><%= @movie["Plot"] %></div></h4>
 <br>
-<div><img src= '<%= @movie["Poster"] %>' ></div>
+<div><img src= '<%= @movie["Poster"] %>' width= "450" height="550"></div>
 <h6 class= "subheader"><div><strong>Year</strong>: <%= @movie["Year"] %></div><h6>
 <br>
 <br>
 <h4 class = "subheader"><div><strong>Actors</strong>: <%= @movie["Actors"] %></div></h4>
-<iframe src="<%= @link %>" width="500" height="500">
+<iframe src="<%= @link %>" width="750" height="600"  >
+<br>
+<br>
+
+<br>
+<br>
+<br>
 <br>
 <br>
 <%= link_to "Back to Search", search_movies_path %>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 <br>
 
 <blockquote>There's only one thing that can kill the movies, and that's education<cite>Will Rogers</cite></blockquote>

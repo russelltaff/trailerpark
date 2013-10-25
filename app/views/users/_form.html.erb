@@ -1,4 +1,4 @@
-<% unless @user.errors.none? %>
+<div class= "form1"><% unless @user.errors.none? %>
   <% @user.errors.full_messages.each do |msg| %>
     <%= msg %>
   <% end %>
@@ -10,9 +10,11 @@
 
   <%= f.label :password %>
   <%= f.password_field :password %>
-
+  <br>
   <%= f.label :password_confirmation %>
   <%= f.password_field :password_confirmation %>
 
   <%= f.submit %>
 <% end %>
+
+</div>

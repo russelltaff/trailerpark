@@ -39,7 +39,7 @@ class MoviesController < ApplicationController
     html = HTTParty.get(url) 
     @movie = JSON(html)
     # @movie = Movie.new
-    raw_xml = HTTParty.get("http://api.traileraddict.com/?film=#{@title.gsub('+', '-')}&count=4")
+    raw_xml = HTTParty.get("http://api.traileraddict.com/?imdb=#{@movie['imdbID'].gsub('tt', '')}&count=4&width=800")
     @link = raw_xml["trailers"]["trailer"].map { |t| t["link"] }.first
     end
 
@@ -49,13 +49,8 @@ class MoviesController < ApplicationController
     html = HTTParty.get(url) 
     @movie = JSON(html)
 
-    raw_xml = HTTParty.get("http://api.traileraddict.com/?imdb=#{@movie['imdbID'].gsub('tt', '')}&count=4&width=680")
+    raw_xml = HTTParty.get("http://api.traileraddict.com/?imdb=#{@movie['imdbID'].gsub('tt', '')}&count=4&width=850")
     @link = raw_xml["trailers"]["trailer"].map { |t| t["link"] }.first
   end
 
 end
-
-
-
-
-
