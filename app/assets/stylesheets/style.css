@@ -25,7 +25,7 @@ iframe.frontpage {
   -webkit-box-shadow: 4px 4px 14px #000; 
   box-shadow: 4px 4px 14px #000; 
 
-  -moz-transform:rotate(20deg);
+  -moz-transform:rotate(18deg);
   -webkit-transform:rotate(20deg);
   -o-transform:rotate(20deg);
   -ms-transform:rotate(20deg);
@@ -78,7 +78,7 @@ blockquote.blockquote1
   {
     font-family:"Helvetica";
     font-size: 1.2em;
-    padding-top: 200px;
+    padding-top: 100px;
     color: white;
   }
 
@@ -86,4 +86,27 @@ form
 {
   padding-top: 75px;
 }
+
+div.panel
+{
+  position:absolute;
+  left:30px;
+}
+
+blockquote.welcome
+{
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  font-size:1.2em;
+}
+
+div.show
+{
+  padding-top: 50px;
+}
+
+h1.class
+{
+  
 }
