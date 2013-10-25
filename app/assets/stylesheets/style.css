@@ -106,7 +106,12 @@ div.show
   padding-top: 50px;
 }
 
-h1.class
+h1.search
 {
-  
+  padding-top: 150px;
+}
+
+h4.search
+{
+  color: white;
 }

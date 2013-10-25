@@ -40,7 +40,7 @@ class MoviesController < ApplicationController
     @movie = JSON(html)
     # @movie = Movie.new
     raw_xml = HTTParty.get("http://api.traileraddict.com/?imdb=#{@movie['imdbID'].gsub('tt', '')}&count=4&width=800")
-    @link = raw_xml["trailers"]["trailer"].map { |t| t["link"] }.first
+    @link = raw_xml["trailers"]["trailer"].map { |t| t["link"] }.last
     end
 
   def redirect_from_keyword
@@ -50,7 +50,7 @@ class MoviesController < ApplicationController
     @movie = JSON(html)
 
     raw_xml = HTTParty.get("http://api.traileraddict.com/?imdb=#{@movie['imdbID'].gsub('tt', '')}&count=4&width=850")
-    @link = raw_xml["trailers"]["trailer"].map { |t| t["link"] }.first
+    @link = raw_xml["trailers"]["trailer"].map { |t| t["link"] }.last
   end
 
 end
