@@ -1,4 +1,5 @@
-== README
+Please See trailerPark "final commit" folder for final code
+README
 
 This app was my first, my baby, and hopefully my biggest 4 day struggle. I started at the top of the moountain, and fell all the way down, hitting my head and bumping, scratching, breaking limbs and other parts that had never fallen so far before. But somehow, when I got to the bottom, I felt better than ever. I dusted myself off, and soon realized that all of these bumps, scratches, breaks and bruises would actually make climbing the mountain <em>easier<em>. 
 

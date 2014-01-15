@@ -4,12 +4,12 @@
 
 <div class= "keyword_list"><% @movies.each do |movie| %>
   
-    <ul>
-      <li><%= link_to "#{movie['Title']}", "/movies/redirect_from_keyword?utf8=✓&title=#{movie["Title"].gsub(" ","+")}&commit=Show+Me+Trailers%21" %> </li>
-      <li>Year: <%= movie["Year"] %></li>
-      <li>Media Type: <%= movie["Type"].upcase %></li>
-    </ul>
-<% end %>
+  <ul>
+    <li><%= link_to "#{movie['Title']}", "/movies/redirect_from_keyword?utf8=✓&title=#{movie["Title"].gsub(" ","+")}&commit=Show+Me+Trailers%21" %> </li>
+    <li>Year: <%= movie["Year"] %></li>
+    <li>Media Type: <%= movie["Type"].upcase %></li>
+  </ul>
+  <% end %>
 </div>
 
 <%= link_to "Back to Search", search_movies_path %>
