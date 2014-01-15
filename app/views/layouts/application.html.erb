@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>trailerPark</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <nav>
+    <% if logged_in? %> 
+    <div class="navigation"> <%= link_to 'Logout', session_path, :method => :delete %>  |  <%= link_to 'Edit Account', edit_user_path(@user) %>
+    </div>
+    <% else %>
+    <% end %>
+     <h1>TrailerPark</h1>
+  </nav>
+  <%= yield %>
+</body>
+</html>

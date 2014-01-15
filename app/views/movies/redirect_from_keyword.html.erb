@@ -1,0 +1,26 @@
+
+<h1 class="redirect_header"> Results for "<%= @title.gsub('+', ' ') %>": </h1>
+
+<h2><%= @movie["Title"] %></h2>
+
+<%= @movie["Plot"] %></h4>
+<br>
+<div class="images_keyword_redirect">
+<img src= '<%= @movie["Poster"] %>' >
+<div class="redirect_vid"><iframe src="<%= @link %>" width="500" height="500"></iframe></div>
+<h6><strong>Year</strong>: <%= @movie["Year"] %></h6>
+<h4><strong>Actors</strong>: <%= @movie["Actors"] %></h4>
+</div>
+
+
+<br>
+<br>
+<%= link_to "Back to Search", search_movies_path %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<blockquote>There's only one thing that can kill the movies, and that's education<cite>Will Rogers</cite></blockquote>

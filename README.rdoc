@@ -1,0 +1,15 @@
+== README
+
+This app was my first, my baby, and hopefully my biggest 4 day struggle. I started at the top of the moountain, and fell all the way down, hitting my head and bumping, scratching, breaking limbs and other parts that had never fallen so far before. But somehow, when I got to the bottom, I felt better than ever. I dusted myself off, and soon realized that all of these bumps, scratches, breaks and bruises would actually make climbing the mountain <em>easier<em>. 
+
+This app signs a user in, validates, then redirects to a welcome/enter page. A link takes a user to the next page, where they can search by full title or by keyword, and then parses from two different APIs - OMDB and TrailerAddict, succesively- to search for the movie trailer/poster/info. The query string enter into OMDB, which returns an imdbID, which then gets entered into a new query that parses based on a URL with the IMDB ID. Some videos don't work because the API is pretty garbage, but for the right movies it works.
+
+Struggles/unresolved issues- 
+parsing from video sites/xml sites
+embedding video from a link (currently the player for the link/video is no bueno)
+error statements (that pop up to say the video isn't currently available)
+
+I know I am capable of creating something great, and this was a painful and wonderful first step into this world. 
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.

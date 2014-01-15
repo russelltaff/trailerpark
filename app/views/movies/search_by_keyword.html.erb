@@ -1,0 +1,21 @@
+<h2 class="not_finding_keyword"> Not finding your movie below? Try again: <br> <%= render "form2" %></h2>
+
+<h4 class="please_choose_keyword_movie"> Please choose from the following: </h4>
+
+<div class= "keyword_list"><% @movies.each do |movie| %>
+  
+    <ul>
+      <li><%= link_to "#{movie['Title']}", "/movies/redirect_from_keyword?utf8=✓&title=#{movie["Title"].gsub(" ","+")}&commit=Show+Me+Trailers%21" %> </li>
+      <li>Year: <%= movie["Year"] %></li>
+      <li>Media Type: <%= movie["Type"].upcase %></li>
+    </ul>
+<% end %>
+</div>
+
+<%= link_to "Back to Search", search_movies_path %>
+
+<blockquote>You can fool a person into going to see a movie with a good trailer.Nile Rogers</blockquote>
+
+
+
+
