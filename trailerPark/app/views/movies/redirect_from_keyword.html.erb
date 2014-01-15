@@ -1,15 +1,16 @@
-<h1> Results for <%= @title.gsub('+', ' ') %>: </h1>
 
-<h2 class= "subheader"><div><%= @movie["Title"] %></div></h2>
+<h1 class="redirect_header"> Results for "<%= @title.gsub('+', ' ') %>": </h1>
 
-<h4 class= "subheader"><div><%= @movie["Plot"] %></div></h4>
-<br>
-<div><img src= '<%= @movie["Poster"] %>' ></div>
-<h6 class= "subheader"><div><strong>Year</strong>: <%= @movie["Year"] %></div><h6>
-<br>
-<br>
-<h4 class = "subheader"><div><strong>Actors</strong>: <%= @movie["Actors"] %></div></h4>
+<h2><%= @movie["Title"] %></h2>
 
+<%= @movie["Plot"] %></h4>
+<br>
+<div class="images_keyword_redirect">
+<img src= '<%= @movie["Poster"] %>' >
+<div class="redirect_vid"><iframe src="<%= @link %>" width="500" height="500"></iframe></div>
+<h6><strong>Year</strong>: <%= @movie["Year"] %></h6>
+<h4><strong>Actors</strong>: <%= @movie["Actors"] %></h4>
+</div>
 
 
 <br>

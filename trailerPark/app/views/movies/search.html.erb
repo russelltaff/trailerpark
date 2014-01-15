@@ -1,24 +1,15 @@
-<h1>Can't Recall the Full Title? <em> No Worries! </em> Enter Any Part You Remember:</h1>
+<div class= "search"><h1>Can't Recall the Full Title? <em> No Worries! </em> Enter Any Part You Remember:</h1>
 <p>(two characters or more, please)</p>
 
-<%= render "form" %>
+<%= render "form2" %>
 <br>
 <br>
 <br>
-
 <h4>Or, if you know the name of the movie you want to see: </h4>
 
 
 
-<%= form_tag search_by_full_title_movies_path, :method => :get do %>
-
-  <%= label_tag :title %>
-  <%= text_field_tag :title %>
-  
-  <%= submit_tag "Show Me Trailers!" %>
-  
-   
-<% end %>
+<%= render "form" %></div>
 
 <br>
 <br>
@@ -29,4 +20,4 @@
 <br>
 <br>
 <br>
-<blockquote>Dude, no. This is serious. I just sharted.<cite>Philip Seymour Hoffman</cite></blockquote>
+<blockquote class="PSH">Dude, no. This is serious. I just sharted.<cite>Philip Seymour Hoffman</cite></blockquote>

@@ -3,7 +3,7 @@ TrailerPark::Application.routes.draw do
     resources :movies, only: [:index, :create]
   end
 
-  resources :movies, except: [:create,] do
+  resources :movies, except: [:create] do
     collection do 
       get "search"
       get "search_by_keyword"
@@ -15,7 +15,7 @@ TrailerPark::Application.routes.draw do
 
   resource :session, only: [:new, :create, :destroy]
 
-root "welcome#index"
+  root "welcome#index"
 end
 
 

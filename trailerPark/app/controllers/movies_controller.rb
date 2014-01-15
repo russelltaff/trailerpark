@@ -11,24 +11,24 @@ class MoviesController < ApplicationController
      # just create the connection bet user and movie
     # else
       # persist the movie
-    
-  end
+      
+    end
 
-  def search
+    def search
 
-    render :search
-  end
+      render :search
+    end
 
-  def index
-    render :index
-  end
+    def index
+      render :index
+    end
 
-  def search_by_keyword
-    @keyword = params[:keyword].gsub(' ', '+')
-    url = "http://www.omdbapi.com/?s=#{@keyword}"  
-    html = HTTParty.get(url) 
-    hash = JSON(html)
-    @movies = hash["Search"]
+    def search_by_keyword
+      @keyword = params[:keyword].gsub(' ', '+')
+      url = "http://www.omdbapi.com/?s=#{@keyword}"  
+      html = HTTParty.get(url) 
+      hash = JSON(html)
+      @movies = hash["Search"]
     # @movie = Movie.new
 
   end
@@ -39,18 +39,18 @@ class MoviesController < ApplicationController
     html = HTTParty.get(url) 
     @movie = JSON(html)
     # @movie = Movie.new
-    end
+    raw_xml = HTTParty.get("http://api.traileraddict.com/?imdb=#{@movie['imdbID'].gsub('tt', '')}&count=4&width=800")
+    @link = raw_xml["trailers"]["trailer"].map { |t| t["link"] }.first
+  end
 
   def redirect_from_keyword
-  @title = params[:title].gsub(' ', '+')
+    @title = params[:title].gsub(' ', '+')
     url = "http://www.omdbapi.com/?t=#{@title}"  
     html = HTTParty.get(url) 
     @movie = JSON(html)
+
+    raw_xml = HTTParty.get("http://api.traileraddict.com/?imdb=#{@movie['imdbID'].gsub('tt', '')}&count=4&width=850")
+    @link = raw_xml["trailers"]["trailer"].map { |t| t["link"] }.first
   end
 
 end
-
-
-
-
-
